@@ -4,7 +4,7 @@
 // 모든 컴포넌트와 페이지들은 먼저 서버에서 렌더 됨 -> 렌더 된 html을 브라우저에 제공 -> client에서 hydrate
 // use client를 쓰지 않은 컴포넌트는 모두 서버 컴포넌트
 
-// clinet 컴포넌트 안에는 server 컴포넌트를 가질 수 없음! - 근데 지금은 된다?
+// clinet 컴포넌트 안에는 server 컴포넌트를 가질 수 없음
 //   https://nextjs.org/docs/app/building-your-application/rendering/composition-patterns#supported-pattern-passing-server-components-to-client-components-as-props
 // server 컴포넌트 안에는 client 컴포넌트를 가질 수 있음
 

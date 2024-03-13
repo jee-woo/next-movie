@@ -5,9 +5,15 @@ export async function GET(request: NextRequest) {
   return NextResponse.json({ test: "hi" }, { status: 200 });
 }
 
-export async function HEAD() {}
+export async function POST(request: NextRequest) {
+  const requestJson = await request.json();
+  return NextResponse.json(
+    { test: "posted", requested: requestJson },
+    { status: 200 }
+  );
+}
 
-export async function POST() {}
+export async function HEAD() {}
 
 export async function PUT() {}
 
